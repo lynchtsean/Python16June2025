@@ -7,3 +7,5 @@ print("Sum is:",a + b)
       
 num = int(input("Enter a number:"))
 print("Even")
+
+import random print("Random number:",random.randint(1,100))
