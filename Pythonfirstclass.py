@@ -34,4 +34,12 @@ while attempts > 0:
         else:
             print(f" Out of tries! The number was {secret_number}.")
 
-Print 1 to 1000
+for i in range(1,1000):
+    print(i)
+
+name = input("What is your name?")
+job = input("Thank you, what is your job? ")
+salary = input("What is your salary? ")
+location = input("Where are you located?")
+
+print(f"I, {name}, from {location}, working as a {job}, with the salary of {salary}, would love to work in cloud and AI.")
