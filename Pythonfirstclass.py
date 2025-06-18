@@ -44,8 +44,15 @@ location = input("Where are you located?")
 
 print(f"I, {name}, from {location}, working as a {job}, with the salary of {salary}, would love to work in cloud and AI.")
 
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
 print("Prime numbers from 1 to 1000 are:")
 for number in range(1, 1001):
     if is_prime(number):
         print(number)
-        
