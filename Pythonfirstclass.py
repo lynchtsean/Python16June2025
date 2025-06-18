@@ -33,3 +33,5 @@ while attempts > 0:
             print(f"Try again! {attempts} attempts left.")
         else:
             print(f" Out of tries! The number was {secret_number}.")
+
+Print 1 to 1000
