@@ -1,5 +1,5 @@
 def show_menu():
-    print("\nWelcome to the Bank!\n")
+    print("\nWelcome to BMO!\n")
     print("1. Deposit")
     print("2. Withdraw")
     print("3. Check Balance")
@@ -28,11 +28,11 @@ def main():
         if choice == '1':
             balance = deposit(balance)
         elif choice == '2':
-            print("Withdraw function not implemented yet.")  # Placeholder
+            print("Withdraw function not implemented yet.") 
         elif choice == '3':
             print(f"Your current balance is: ${balance:.2f}")
         elif choice == '4':
-            print("Thank you for using the bank app. Goodbye!")
+            print("Thank you for using the BMO bank app. Goodbye!")
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
