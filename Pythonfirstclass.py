@@ -56,3 +56,12 @@ print("Prime numbers from 1 to 1000 are:")
 for number in range(1, 1001):
     if is_prime(number):
         print(number)
+
+n = int(input("Enter how many Fibonacci numbers to print: "))
+a = 0
+b = 1
+for i in range(n):
+   print(a)
+   next = a + b
+   a = b
+   b = next
