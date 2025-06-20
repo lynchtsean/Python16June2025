@@ -65,3 +65,10 @@ for i in range(n):
    next = a + b
    a = b
    b = next
+
+def add_number(a, b):
+    return (a + b)
+number1=(input("Give me the first number:"))
+number2=(input("Give me the second number:"))
+addition=add_number(number1,number2)
+print("The sum is", addition)
