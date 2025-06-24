@@ -24,3 +24,8 @@ print(f"Subtotal: ${subtotal:.2f}")
 print(f"Discount: -${discount:.2f}")
 print(f"Tax (5%): ${tax:.2f}")
 print(f"Total: ${total:.2f}")
+
+again = input("\nDo you want to make another purchase? (yes/no): ").strip().lower()
+if again != "yes":
+        print("Thank you! Goodbye.")
+        break 
