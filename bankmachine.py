@@ -1,10 +1,8 @@
-# Dictionary to store user data
 users = {
-    "user1": {"password": "pass123", "balance": 100},
-    "user2": {"password": "abc123", "balance": 200}
+    "grinch": {"password": "pass123", "balance": 500},
+    "lynch": {"password": "pass321", "balance": 500}
 }
 
-# Login
 print("Welcome to Secure Smart ATM")
 username = input("Enter username: ")
 
@@ -58,7 +56,7 @@ if username in users:
             else:
                 print("Invalid option. Try again.")
 
-        users[username]["balance"] = balance  # Update balance in dictionary
+        users[username]["balance"] = balance
 
     else:
         print("Password incorrect.")
