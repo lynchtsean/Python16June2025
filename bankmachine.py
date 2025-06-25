@@ -1,24 +1,42 @@
 users = {
     "grinch": {"password": "orange", "balance": 500},
-    "lynch": {"password": "apple", "balance": 500}
+    "lynch": {"password": "apple", "balance": 500},
+    "ortiz": {"password": "david", "balance": 500}
 }
 
-print("Welcome to Secure Smart ATM")
-username = input("Enter username: ")
+print("Welcome to Capital Digital ATM")
 
-if username in users:
-    while True:
-        password = input("Enter password: ")
-        if password == users[username]["password"]:
-            print("Login successful!")
-            break
+while True:
+    print("\nPlease choose an option:")
+    print("1. Sign In")
+    print("2. Sign Up")
+    option = input("Enter 1 or 2: ")
+
+    if option == "1":
+        username = input("Enter username: ")
+        if username in users:
+            while True:
+                password = input("Enter password: ")
+                if password == users[username]["password"]:
+                    print("Login successful!")
+                    break
+                else:
+                    print("Password incorrect. Please try again.")
+            break  
         else:
-            print("Password incorrect. Please try again.")
-else:
-    print("Username not found. Let's create a new account.")
-    password = input("Create a password: ")
-    users[username] = {"password": password, "balance": 0}
-    print("Account created successfully! You can now use your ATM.")
+            print("Username not found. Please sign up.")
+    
+    elif option == "2":
+        username = input("Choose a username: ")
+        if username in users:
+            print("Username already exists. Try signing in or use a different name.")
+        else:
+            password = input("Create a password: ")
+            users[username] = {"password": password, "balance": 0}
+            print("Account created successfully! You can now use the ATM.")
+            break 
+    else:
+        print("Invalid option. Please enter 1 or 2.")
 
 balance = users[username]["balance"]
 
@@ -61,7 +79,7 @@ while True:
             print("Not enough balance to invest.")
 
     elif choice == "5":
-        print("Thank you for using Smart ATM. Keep saving!")
+        print("Thank you for using Capital Digital ATM. Keep saving!")
         break
     else:
         print("Invalid option. Try again.")
